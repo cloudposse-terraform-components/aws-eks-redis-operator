@@ -2,7 +2,7 @@
 _extends: .github
 repository:
   name: aws-eks-redis-operator
-  description: This component installs `redis-operator` for EKS clusters
+  description: "This component installs `redis-operator` for EKS clusters"
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
 

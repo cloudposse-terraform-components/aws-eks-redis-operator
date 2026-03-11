@@ -20,7 +20,7 @@ module "redis_operator" {
   repository           = var.chart_repository
   description          = var.chart_description
   chart_version        = var.chart_version
-  kubernetes_namespace = join("", kubernetes_namespace.default.*.id)
+  kubernetes_namespace = join("", kubernetes_namespace.default[*].id)
   create_namespace     = false
   wait                 = var.wait
   atomic               = var.atomic
